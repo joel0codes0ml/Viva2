@@ -25,11 +25,19 @@ export function Services() {
     {
       title: 'Commercial Services',
       items: [
-        { name: 'Refrigeration', desc: 'Cold room and commercial fridge installation & repair.' },
-        { name: 'Laundry Systems', desc: 'Commercial washers and dryers setup.' },
-        { name: 'Kitchen Ventilation', desc: 'Exhaust systems for hotels and restaurants.' },
+        { name: 'Coldroom Installation', desc: 'Custom cold storage solutions for food and medical supplies.' },
+        { name: 'Laundry Systems', desc: 'Professional setup and maintenance of commercial laundry equipment.' },
+        { name: 'Kitchen Appliances', desc: 'Installation and repair of industrial kitchen equipment.' },
       ],
       icon: '🧊'
+    },
+    {
+      title: 'Specialized Solutions',
+      items: [
+        { name: 'Fulwoods Systems', desc: 'Specialized climate control and ventilation solutions.' },
+        { name: 'Maintenance Contracts', desc: 'Comprehensive service plans for long-term reliability.' },
+      ],
+      icon: '🛠️'
     }
   ];
 

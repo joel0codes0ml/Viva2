@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Send, Phone, MessageSquare, Clock, MapPin } from 'lucide-react';
 
@@ -136,10 +136,12 @@ export function Quote() {
               <div className="space-y-2">
                 <label className="text-sm font-bold text-slate-700">Service Required</label>
                 <select className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 outline-none transition-all appearance-none bg-white">
-                  <option>A/C Installation</option>
-                  <option>A/C Repair</option>
+                  <option>A/C Installation & Repair</option>
                   <option>HVAC Maintenance</option>
-                  <option>Commercial Refrigeration</option>
+                  <option>Coldroom Installation & Maintenance</option>
+                  <option>Laundry Services</option>
+                  <option>Kitchen Appliances</option>
+                  <option>Fulwoods Systems</option>
                   <option>Other</option>
                 </select>
               </div>

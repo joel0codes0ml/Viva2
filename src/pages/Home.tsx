@@ -87,9 +87,10 @@ export function Home() {
               { title: 'A/C Installation', desc: 'Expert setup of split, cassette, and VRF systems.', icon: '❄️' },
               { title: 'A/C Repair', desc: 'Fast diagnostics and fixing of all AC brands.', icon: '🛠️' },
               { title: 'HVAC Maintenance', desc: 'Regular servicing to ensure peak performance.', icon: '🔄' },
-              { title: 'Duct & Vent Installation', desc: 'Optimized airflow for commercial buildings.', icon: '💨' },
-              { title: 'Refrigeration', desc: 'Cold room and commercial fridge solutions.', icon: '🧊' },
-              { title: 'Laundry Systems', desc: 'Commercial laundry equipment installation.', icon: '👕' },
+              { title: 'Coldroom Systems', desc: 'Installation and maintenance of cold storage.', icon: '🧊' },
+              { title: 'Laundry Services', desc: 'Commercial laundry equipment solutions.', icon: '👕' },
+              { title: 'Kitchen Appliances', desc: 'Industrial kitchen equipment installation.', icon: '🍳' },
+              { title: 'Fulwoods', desc: 'Specialized climate and ventilation systems.', icon: '🪵' },
             ].map((service, i) => (
               <motion.div
                 key={i}

@@ -44,10 +44,10 @@ export function Footer() {
             <h3 className="text-white font-bold mb-6">Our Services</h3>
             <ul className="space-y-4">
               <li><Link to="/services" className="hover:text-blue-500 transition-colors">A/C Installation</Link></li>
-              <li><Link to="/services" className="hover:text-blue-500 transition-colors">A/C Repair</Link></li>
-              <li><Link to="/services" className="hover:text-blue-500 transition-colors">HVAC Maintenance</Link></li>
-              <li><Link to="/services" className="hover:text-blue-500 transition-colors">Refrigeration</Link></li>
-              <li><Link to="/services" className="hover:text-blue-500 transition-colors">Commercial Systems</Link></li>
+              <li><Link to="/services" className="hover:text-blue-500 transition-colors">Coldroom Systems</Link></li>
+              <li><Link to="/services" className="hover:text-blue-500 transition-colors">Laundry Services</Link></li>
+              <li><Link to="/services" className="hover:text-blue-500 transition-colors">Kitchen Appliances</Link></li>
+              <li><Link to="/services" className="hover:text-blue-500 transition-colors">Fulwoods</Link></li>
             </ul>
           </div>
 
