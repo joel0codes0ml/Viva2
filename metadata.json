@@ -1,0 +1,7 @@
+{
+  "name": "Viva Vent HVAC Limited",
+  "description": "Professional HVAC Installation & Repair in Kenya – Fast, Reliable, Affordable.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
