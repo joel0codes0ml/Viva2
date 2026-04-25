@@ -51,8 +51,8 @@ export function About() {
             
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop"
-                alt="Our Team"
+                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069&auto=format&fit=crop"
+                alt="Viva Vent HVAC Technicians in navy blue overalls"
                 className="rounded-3xl shadow-2xl"
                 referrerPolicy="no-referrer"
               />
@@ -83,6 +83,30 @@ export function About() {
                 <p className="text-slate-600 leading-relaxed">{value.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Leadership</h2>
+            <p className="text-slate-600">The visionary team behind Viva Vent's success.</p>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="max-w-sm w-full bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 shadow-sm transition-all hover:shadow-md">
+              <div className="aspect-[4/5] bg-slate-200 flex items-center justify-center relative group">
+                <Users className="w-20 h-20 text-slate-400" />
+                {/* Fallback image placeholder */}
+                <div className="absolute inset-0 bg-blue-900/5 transition-opacity group-hover:opacity-0" />
+              </div>
+              <div className="p-8 text-center">
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">Ronny Otieno Onyango</h3>
+                <p className="text-blue-600 font-bold mb-4 uppercase tracking-wider text-sm">Team Leader & Chief Operations Officer</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

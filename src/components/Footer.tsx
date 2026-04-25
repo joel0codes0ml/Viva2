@@ -9,12 +9,12 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-6">
             <Link to="/" className="flex items-center gap-2">
-              <div className="bg-blue-600 p-1.5 rounded-lg">
-                <Wind className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-xl font-bold tracking-tight text-white">
-                VIVA VENT
-              </span>
+              <img 
+                src="/logo.png" 
+                alt="Viva Vent HVAC Ltd Logo" 
+                className="h-16 w-auto object-contain brightness-0 invert" 
+                referrerPolicy="no-referrer"
+              />
             </Link>
             <p className="text-slate-400 leading-relaxed">
               Kenya's trusted partner for reliable, fast, and professional HVAC solutions for homes and businesses.
@@ -47,7 +47,7 @@ export function Footer() {
               <li><Link to="/services" className="hover:text-blue-500 transition-colors">Coldroom Systems</Link></li>
               <li><Link to="/services" className="hover:text-blue-500 transition-colors">Laundry Services</Link></li>
               <li><Link to="/services" className="hover:text-blue-500 transition-colors">Kitchen Appliances</Link></li>
-              <li><Link to="/services" className="hover:text-blue-500 transition-colors">Fulwoods</Link></li>
+              <li><Link to="/services" className="hover:text-blue-500 transition-colors">Electrical Works</Link></li>
             </ul>
           </div>
 

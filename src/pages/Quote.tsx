@@ -141,7 +141,7 @@ export function Quote() {
                   <option>Coldroom Installation & Maintenance</option>
                   <option>Laundry Services</option>
                   <option>Kitchen Appliances</option>
-                  <option>Fulwoods Systems</option>
+                  <option>Electrical Works</option>
                   <option>Other</option>
                 </select>
               </div>

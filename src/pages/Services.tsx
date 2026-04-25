@@ -32,12 +32,12 @@ export function Services() {
       icon: '🧊'
     },
     {
-      title: 'Specialized Solutions',
+      title: 'Electrical & Maintenance',
       items: [
-        { name: 'Fulwoods Systems', desc: 'Specialized climate control and ventilation solutions.' },
+        { name: 'Electrical Works', desc: 'Reliable electrical wiring, repairs, and maintenance for residential and commercial properties.' },
         { name: 'Maintenance Contracts', desc: 'Comprehensive service plans for long-term reliability.' },
       ],
-      icon: '🛠️'
+      icon: '⚡'
     }
   ];
 

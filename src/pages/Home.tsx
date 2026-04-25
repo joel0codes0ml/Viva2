@@ -90,7 +90,7 @@ export function Home() {
               { title: 'Coldroom Systems', desc: 'Installation and maintenance of cold storage.', icon: '🧊' },
               { title: 'Laundry Services', desc: 'Commercial laundry equipment solutions.', icon: '👕' },
               { title: 'Kitchen Appliances', desc: 'Industrial kitchen equipment installation.', icon: '🍳' },
-              { title: 'Fulwoods', desc: 'Specialized climate and ventilation systems.', icon: '🪵' },
+              { title: 'Electrical Works', desc: 'Professional electrical installation and maintenance.', icon: '⚡' },
             ].map((service, i) => (
               <motion.div
                 key={i}

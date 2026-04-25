@@ -34,19 +34,19 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center gap-2">
-            <div className="bg-blue-600 p-1.5 rounded-lg">
-              <Wind className="w-6 h-6 text-white" />
-            </div>
-            <span className={cn(
-              "text-xl font-bold tracking-tight",
-              !isScrolled && location.pathname === '/' ? "text-white" : "text-blue-900"
-            )}>
-              VIVA VENT
-            </span>
-          </Link>
+          {/* Mobile Menu Toggle (Left on mobile) */}
+          <button
+            className="md:hidden p-2"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? (
+              <X className={cn("w-6 h-6", !isScrolled && location.pathname === '/' ? "text-white" : "text-slate-900")} />
+            ) : (
+              <Menu className={cn("w-6 h-6", !isScrolled && location.pathname === '/' ? "text-white" : "text-slate-900")} />
+            )}
+          </button>
 
-          {/* Desktop Nav */}
+          {/* Desktop Nav (Left on desktop) */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
@@ -69,17 +69,29 @@ export function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile Menu Toggle */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? (
-              <X className={cn("w-6 h-6", !isScrolled && location.pathname === '/' ? "text-white" : "text-slate-900")} />
-            ) : (
-              <Menu className={cn("w-6 h-6", !isScrolled && location.pathname === '/' ? "text-white" : "text-slate-900")} />
-            )}
-          </button>
+          {/* Logo (Right side) */}
+          <Link to="/" className="flex items-center gap-2">
+            <img 
+              src="/logo.png" 
+              alt="Viva Vent HVAC Ltd Logo" 
+              className={cn(
+                "h-12 w-auto object-contain",
+                !isScrolled && location.pathname === '/' ? "brightness-0 invert" : ""
+              )}
+              referrerPolicy="no-referrer"
+              onError={(e) => {
+                // Fallback to text logo if image fails to load
+                e.currentTarget.style.display = 'none';
+                e.currentTarget.nextElementSibling?.classList.remove('hidden');
+              }}
+            />
+            <span className={cn(
+              "text-xl font-bold tracking-tight hidden",
+              !isScrolled && location.pathname === '/' ? "text-white" : "text-blue-900"
+            )}>
+              VIVA VENT
+            </span>
+          </Link>
         </div>
       </div>
 
